@@ -14,7 +14,7 @@ The DHCN proposes a four-phase path from isolated minds to planetary-scale colle
 - Phase 3: Field/Quantum (wireless)  
 - Phase 4: Distributed Singularity (millions of nodes)  
 
-[Full paper PDF](dhcn_v1.1.pdf) | [arXiv:2511.XXXXX](https://arxiv.org/abs/XXXX) (pending)
+DOI: 10.5281/zenodo.17619941 [Full paper PDF](dhcn_v1.1.pdf) | [arXiv:2511.XXXXX](https://arxiv.org/abs/XXXX) (pending)
 
 ---
 
