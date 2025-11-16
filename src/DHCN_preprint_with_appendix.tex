@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\title{Distributed Human Cognition Network (DHCN): \\A Phased Framework for Networked Human-AI Consciousness}
+\author{David DeFazio \\ Independent Researcher, United States \\ \texttt{@mrvyper2u}}
+\date{November 15, 2025}
+
+\definecolor{codegray}{rgb}{0.95,0.95,0.95}
+\definecolor{codeblue}{rgb}{0.25,0.5,0.75}
+
+\lstset{
+    backgroundcolor=\color{codegray},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{codeblue}\bfseries,
+    frame=single,
+    breaklines=true,
+    captionpos=b
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The Distributed Human Cognition Network (DHCN) proposes a framework for networked human-AI collective intelligence, progressing from independent cognition to emergent supermind behavior. We present a multi-agent simulation as a proof-of-concept, modeling human nodes whose states evolve under AI-mediated synchronization across four phases. Early phases represent individual cognition and initial AI-assisted connections, while later phases demonstrate emergent collective decision-making and Phase 4 memory accumulation, simulating supermind formation. Collective decision events occur when agent variance falls below a defined threshold, incrementally strengthening AI memory and influencing future synchronization. The simulation produces both visual and numerical outputs, illustrating the plausibility of coordinated human-AI cognition, adaptive memory accumulation, and resilient networked intelligence. These results provide a foundation for exploring scalable, distributed human-AI systems and their potential role in enhancing problem-solving, knowledge sharing, and global collective insight.
+\end{abstract}
+
+\section{Introduction}
+The Distributed Human Cognition Network (DHCN) is a conceptual framework exploring the potential for multiple human minds to connect, forming a collective intelligence augmented by AI and advanced quantum/field-based technologies. The framework aims to leverage individual cognition while creating a resilient, adaptive, and scalable network of shared thought. While speculative, the DHCN model provides a structured pathway for exploring both near-term and far-future possibilities of human-AI collective consciousness.
+
+\section{Methods / Simulation Description}
+To provide a proof-of-concept for the DHCN framework, we implemented a multi-agent Python simulation modeling human nodes coordinated via AI-mediated synchronization across four conceptual phases. Each agent represents an individual human node with a dynamic state between 0 and 1. Phases 1–4 correspond to progressive AI influence: Phase 1 reflects independent cognition, Phase 2 introduces initial AI-mediated connections, Phase 3 demonstrates emergent collective decision-making, and Phase 4 incorporates memory accumulation, simulating supermind formation. At each step, the AI calculates a shared insight, which agents partially adopt, while random fluctuations introduce individual variability. Collective decision ``collapse events'' occur when the variance among agents drops below a defined threshold, marking emergent coordinated behavior. In Phase 4, each collapse incrementally strengthens the AI memory, increasing influence on future steps. The simulation outputs include (1) a plot visualizing agent states, phase progression, collective decision events, and AI memory growth, and (2) a CSV file recording numerical data for each agent and time step.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.9\textwidth]{dhcn_simulation_final.png}
+\caption{DHCN Simulation: Multi-Agent Synchronization with Phase 4 Memory Growth. Colored lines represent individual agent states, light shading shows phases 1--4, red dashed lines indicate collective decision events, the black line shows AI memory accumulation, and the gray overlay represents cumulative supermind strength.}
+\label{fig:simulation}
+\end{figure}
+
+\section{Results}
+The simulation demonstrates that human nodes initially act independently but gradually synchronize under AI-mediated influence. Early phases show high variance among agents, while Phase 3 introduces emergent collective decision-making. Phase 4 memory accumulation strengthens future synchronization, simulating an adaptive supermind. Red dashed lines mark collective decision collapse events, illustrating moments of emergent network-wide coordination. The AI memory line and gray overlay show how repeated collapses incrementally increase the system’s collective intelligence.
+
+\section{Discussion}
+The simulation illustrates how a network of human nodes, mediated by AI, can transition from independent cognition to emergent collective intelligence. Phase 4 memory accumulation demonstrates that repeated coordinated decisions strengthen the system’s overall adaptive capacity, conceptually representing a supermind with distributed memory. While the current model is simplified and does not implement true quantum entanglement, it provides a platform for exploring parameter effects such as network size, AI influence, and decision thresholds. Future work could incorporate more sophisticated agent behaviors, multi-layered network topologies, and dynamic memory weighting, moving closer to a realistic model of distributed human-AI cognition and nonlocal supermind formation.
+
+\appendix
+\section{Appendix A: Simulation Usage Instructions}
+The following instructions document how to reproduce the simulation results and figures included in this submission.
+
+\subsection{Requirements}
+\begin{itemize}
+    \item Python 3.x
+    \item Numpy
+    \item Matplotlib
+\end{itemize}
+
+\subsection{Running the Simulation}
+Run the simulation script to generate plots and CSV data:
+
+\begin{lstlisting}[language=bash]
+python dhcn_simulation_final.py
+\end{lstlisting}
+
+This produces:
+\begin{itemize}
+    \item \texttt{dhcn_simulation_final.png} -- Plot of agent states, collapse events, and AI memory.
+    \item \texttt{dhcn_simulation_final.csv} -- Numerical data for each agent and timestep.
+\end{itemize}
+
+\subsection{CSV Data Description}
+Columns in \texttt{dhcn_simulation_final.csv}:
+\begin{itemize}
+    \item \texttt{Agent\_1 ... Agent\_10} -- State of each agent (0-1)
+    \item \texttt{Phase} -- Phase number (1-4)
+    \item \texttt{CollapseEvent} -- 1 if a collective decision occurred at that timestep, else 0
+    \item \texttt{AI\_Memory} -- Accumulated AI memory (Phase 4)
+\end{itemize}
+
+\subsection{Citation}
+DeFazio, D. (2025). Distributed Human Cognition Network (DHCN) Simulation Dataset. Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.17620771}{10.5281/zenodo.17620771}
+
+\section{References}
+\begin{enumerate}
+    \item Penrose, R., \& Hameroff, S. (2014). \textit{Consciousness in the Universe}.
+    \item Busemeyer, J. R., \& Bruza, P. D. (2012). \textit{Quantum Models of Cognition}.
+    \item Zurek, W. H. (2009). Quantum Darwinism. \textit{Nature Physics}, 5, 181–188.
+    \item DeFazio, D. (2025). \textit{Distributed Human Cognition Network (DHCN) Simulation Dataset}. Zenodo. \href{https://doi.org/10.5281/zenodo.17620771}{DOI:10.5281/zenodo.17620771}.
+\end{enumerate}
+
+\end{document}
