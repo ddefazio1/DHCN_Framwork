@@ -1,7 +1,7 @@
 # Distributed Human Cognition Network (DHCN) v1.6
 
 **Author:** David DeFazio  
-**Zenodo DOI:** [YOUR_NEW_DOI_HERE](https://doi.org/YOUR_NEW_DOI_HERE)  
+**Zenodo DOI:** 10.5281/zenodo.17625632(https://doi.org/10.5281/zenodo.17625632  
 **Date:** November 2025
 
 ---
